@@ -20,6 +20,14 @@ header {
     grid-template-columns: 3fr 50px 100px 1fr;
 }
 
+#btn-search {
+    background: url('./icons/magnify.svg') no-repeat;
+    cursor: pointer;
+    width: 2rem;
+    height: auto;
+    border: none;
+}
+
 .user-panel {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -40,7 +48,7 @@ header {
 }
 
 .logo::before {
-    content: url(./icons/view-dashboard.svg);
+    content: url('./icons/view-dashboard.svg');
     filter: invert(100%);
     display: inline-block;
     position: absolute;
@@ -74,43 +82,41 @@ nav a:visited {
 }
 
 .home {
-    background-image: url(./icons/home.svg);
+    background-image: url('./icons/home.svg');
 }
 
 .profile {
-    background-image: url(./icons/card-account-details.svg);
+    background-image: url('./icons/card-account-details.svg');
 }
 
 .messages {
-    background-image: url(./icons/message.svg);
+    background-image: url('./icons/message.svg');
 }
 
 .history {
-    background-image: url(./icons/history.svg);
+    background-image: url('./icons/history.svg');
 }
 
 .tasks {
-    background-image: url(./icons/calendar-check-outline.svg);
+    background-image: url('./icons/calendar-check-outline.svg');
 }
 
 .communities {
-    background-image: url(./icons/account-group.svg);
+    background-image: url('./icons/account-group.svg');
 }
 
 .settings {
-    background-image: url(./icons/cog-outline.svg);
+    background-image: url('./icons/cog-outline.svg');
     margin-top: 2rem;
 }
 
 .support {
-    background-image: url(./icons/help-circle.svg);
+    background-image: url('./icons/help-circle.svg');
 }
 
 .privacy {
-    background-image: url(./icons/shield-lock.svg);
+    background-image: url('./icons/shield-lock.svg');
 }
-
-
 
 .content {
     grid-column: 2;
