@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --accent: rgb(136, 92, 11);
+    --accent: rgb(158, 35, 115);
     --shadow: rgba(100, 80, 25, 0.5);
 }
 
@@ -32,7 +32,6 @@ header {
 #btn-search {
     background-image: url('./icons/magnify.svg');
     background-color: white;
-    cursor: pointer;
     width: 2.5rem;
     height: 2.5rem;
     vertical-align: top;
@@ -80,7 +79,7 @@ header {
 .welcome .user-name  {
     grid-column: 2;
     grid-row: 2;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
@@ -103,7 +102,7 @@ header {
 
 .content-creation-nav button {
     background-color: var(--accent);
-    color: #eee;
+    color: #fff;
     width: 120px;
     padding: .6rem 1.5rem;
     border-radius: 28px;
@@ -155,7 +154,7 @@ nav li {
 
 nav a,
 nav a:visited {
-    color: #333;
+    color: #000;
     text-decoration: none;
 }
 
@@ -206,12 +205,59 @@ nav a:visited {
     grid-gap: 16px;
 }
 
+.content h1 {
+    font-size: 1.4rem;
+}
+
 .projects {
     grid-column: 1;
     grid-row: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 1.5rem repeat(auto-fill, minmax(1fr, 2fr));
+    grid-gap: 1rem;
+}
+
+.projects > h1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.card {
+    border-radius: 12px;
+    border-left: solid 6px var(--accent);
+    padding: 1rem;
+    box-shadow: 2px 2px 5px var(--shadow);
+}
+
+.card > h2 {
+    font-size: 1.2rem;
+}
+
+.project-options {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1rem);
+    grid-gap: 1.8rem;
+    justify-content: end;
+}
+
+.project-options button {
+    background-color: white;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.favorite {
+    background-image: url('./icons/star-plus-outline.svg');
+}
+
+.watch {
+    background-image: url('./icons/eye-plus-outline.svg');
+}
+
+.fork {
+    background-image: url('./icons/source-fork.svg');
 }
 
 .announcements {
