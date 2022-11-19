@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --accent: rgb(158, 35, 115);
-    --accent-muted: rgb(235, 205, 225);
-    --shadow: rgba(61, 3, 82, 0.5);
-
-    --box-shadow: 2px 2px 5px var(--shadow);
+    --accent: rgb(139, 26, 156);
+    --accent-muted: rgb(232, 231, 246);
+    --shadow: rgba(61, 3, 82, 0.4);
+    --box-shadow: 2px 2px 4px var(--shadow);
 }
 
 body {
@@ -27,7 +26,7 @@ header {
     padding: 1.5rem 1.5rem 0;
     grid-column: 2;
     grid-row: 1;
-    box-shadow: 0 5px 5px var(--shadow);
+    box-shadow: 0 3px 4px var(--shadow);
 }
 
 .toolbar {
@@ -123,6 +122,7 @@ header {
     grid-row: 1 / -1;
     background-color: var(--accent);
     padding-top: 1.8rem;
+    box-shadow: 2px 0px 5px rgba(61, 3, 82, 0.4);
 }
 
 .logo {
@@ -212,6 +212,8 @@ nav a:visited {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     grid-gap: 16px;
+    position: relative;
+    z-index: -99;
 }
 
 .content h1 {
